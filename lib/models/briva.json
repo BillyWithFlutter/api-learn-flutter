@@ -1,0 +1,14 @@
+{
+    "status": true,
+    "responseDescription": "Success",
+    "responseCode": "00",
+    "data": {
+        "institutionCode": "J104408",
+        "brivaNo": "77777",
+        "custCode": "123456789115",
+        "nama": "John Doe",
+        "amount": "100000",
+        "keterangan": "BRIVA Testing",
+        "expiredDate": "2019-02-27 23:59:00"
+    }
+}   
