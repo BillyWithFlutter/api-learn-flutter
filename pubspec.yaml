@@ -37,6 +37,7 @@ dependencies:
   flutter_auth: ^0.0.1
   flutter_auth_ui: ^3.1.0
   http: ^0.13.5
+  intl: ^0.18.0
   oauth2: ^2.0.1
 
 dev_dependencies:
