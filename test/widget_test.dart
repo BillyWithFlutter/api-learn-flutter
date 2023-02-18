@@ -47,6 +47,9 @@ void main() async {
     String timestamp =
         DateFormat('yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'').format(utcTime);
 
+    String timeplus1day = DateFormat('yyyy-MM-dd HH:mm:ss')
+        .format(utcTime.add(const Duration(days: 1)));
+
     final data = jsonEncode({
       "institutionCode": "J104408",
       "brivaNo": "77777",
@@ -54,10 +57,10 @@ void main() async {
       "nama": "John Doe",
       "amount": "20000",
       "keterangan": "",
-      "expiredDate": "2023-02-29 09:57:26"
+      "expiredDate": timeplus1day,
     });
 
-    String token = 'Bearer$accessToken';
+    String token = 'Bearer $accessToken';
     String signature =
         generateSignature(path, verb, token, timestamp, data, consumerSecret);
 
